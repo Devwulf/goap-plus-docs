@@ -1,6 +1,7 @@
-site_name: My Docs
+site_name: GOAP Plus
 nav:
     - Home: index.md
+    - About: about.md
 theme: readthedocs
 docs_dir: files
 site_dir: docs
