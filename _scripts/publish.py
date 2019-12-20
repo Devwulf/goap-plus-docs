@@ -20,7 +20,8 @@ def run(command, print_command=True):
 if os.name == 'nt':
     # Temporary accomadation until sultan gets fixed
     print(run('git fetch &'))
-    print(run('git pull &'))
+    print(run('git pull origin master &'))
+    print(run('mkdocs build &'))
     print(run('git add -A &'))
     print(run('git subtree push --prefix site origin gh-pages &'))
     print(run('git add -A &'))
@@ -31,7 +32,8 @@ if os.name == 'nt':
 
 else:
     print(run('git fetch'))
-    print(run('git pull'))
+    print(run('git pull origin master'))
+    print(run('mkdocs build'))
     print(run('git add -A'))
     print(run('git subtree push --prefix site origin gh-pages'))
     print(run('git add -A'))
