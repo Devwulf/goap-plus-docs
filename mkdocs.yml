@@ -2,3 +2,5 @@ site_name: My Docs
 nav:
     - Home: index.md
 theme: readthedocs
+docs_dir: files
+site_dir: docs

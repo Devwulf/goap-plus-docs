@@ -24,10 +24,6 @@ if os.name == 'nt':
     print(run('mkdocs build &'))
     print(run('git add -A &'))
     print(run('git commit -m "update" &'))
-    print(run('git subtree push --prefix site origin gh-pages &'))
-    print(run('git add -A &'))
-    print(run('git reset site/ &'))
-    print(run('git commit -m "update" &'))
     notify(run('git push origin master &'))
 
 
@@ -36,9 +32,5 @@ else:
     print(run('git pull origin master'))
     print(run('mkdocs build'))
     print(run('git add -A'))
-    print(run('git commit -m "update"'))
-    print(run('git subtree push --prefix site origin gh-pages'))
-    print(run('git add -A'))
-    print(run('git reset site/'))
     print(run('git commit -m "update"'))
     notify(run('git push origin master'))
