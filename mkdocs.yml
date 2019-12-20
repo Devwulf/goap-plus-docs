@@ -1,4 +1,4 @@
-site_name: GOAP Plus
+site_name: GOAP Plus Documentation
 nav:
     - Home: index.md
     - About: about.md
